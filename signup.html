@@ -1,72 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>ZNT DATA Signup</title>
 
 <style>
 
 *{
 box-sizing:border-box;
-font-family:Segoe UI, Arial;
+font-family:Segoe UI, sans-serif;
 }
 
 body{
 margin:0;
-background:linear-gradient(135deg,#0f172a,#1e3a8a);
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-min-height:100vh;
+background:linear-gradient(120deg,#0f172a,#1d4ed8);
 color:white;
 }
 
-.container{
-background:#1e293b;
+.card{
+background:#111827;
 padding:40px;
-border-radius:10px;
-width:420px;
-box-shadow:0 10px 25px rgba(0,0,0,0.4);
+border-radius:12px;
+width:350px;
+box-shadow:0 15px 40px rgba(0,0,0,0.5);
 }
 
 h2{
 text-align:center;
-margin-bottom:20px;
+margin-bottom:25px;
 }
 
-input,select,textarea{
+input{
 width:100%;
 padding:12px;
 margin:8px 0;
 border:none;
 border-radius:6px;
-background:#334155;
+background:#1f2937;
 color:white;
 }
 
-input::placeholder,
-textarea::placeholder{
-color:#94a3b8;
-}
-
-textarea{
-resize:none;
-height:70px;
+input::placeholder{
+color:#9ca3af;
 }
 
 button{
 width:100%;
 padding:12px;
 margin-top:15px;
-background:#f59e0b;
 border:none;
 border-radius:6px;
+background:#3b82f6;
+color:white;
 font-size:16px;
 cursor:pointer;
 }
 
 button:hover{
-background:#fbbf24;
+background:#2563eb;
 }
 
 .login{
@@ -76,7 +75,7 @@ font-size:14px;
 }
 
 .login a{
-color:#38bdf8;
+color:#60a5fa;
 text-decoration:none;
 }
 
@@ -86,9 +85,9 @@ text-decoration:none;
 
 <body>
 
-<div class="container">
+<div class="card">
 
-<h2>Create ZNT DATA Account</h2>
+<h2>Create Account</h2>
 
 <input type="text" placeholder="Full Name">
 
@@ -96,29 +95,9 @@ text-decoration:none;
 
 <input type="password" placeholder="Password">
 
-<input type="tel" placeholder="Phone Number">
-
-<select>
-<option>Select Role</option>
-<option>Client</option>
-<option>Problem Solver</option>
-</select>
-
 <input type="text" placeholder="Country">
 
 <input type="text" placeholder="City">
-
-<input type="text" placeholder="Primary Skills (Python, Web Dev, AI)">
-
-<input type="number" placeholder="Years of Experience">
-
-<input type="text" placeholder="GitHub Profile">
-
-<input type="text" placeholder="LinkedIn Profile">
-
-<textarea placeholder="Describe your technical experience"></textarea>
-
-<textarea placeholder="What type of problems can you solve?"></textarea>
 
 <button>Create Account</button>
 

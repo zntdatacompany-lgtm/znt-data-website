@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZNT DATA Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#f4f6f9;
+}
+
+/* NAVBAR */
+
+nav{
+background:#0f2a44;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+/* DASHBOARD LAYOUT */
+
+.dashboard{
+display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:220px;
+background:#0f2a44;
+min-height:100vh;
+padding-top:20px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#1e4d7b;
+}
+
+/* MAIN CONTENT */
+
+.main{
+flex:1;
+padding:30px;
+}
+
+/* CARDS */
+
+.cards{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-bottom:30px;
+}
+
+.card{
+background:white;
+padding:20px;
+width:200px;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3{
+margin:0;
+color:#0f2a44;
+}
+
+/* TABLE */
+
+table{
+width:100%;
+background:white;
+border-collapse:collapse;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+table th, table td{
+padding:12px;
+border-bottom:1px solid #ddd;
+text-align:left;
+}
+
+table th{
+background:#0f2a44;
+color:white;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>ZNT DATA Dashboard</h2>
+
+</nav>
+
+<div class="dashboard">
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<a href="dashboard.html">Dashboard</a>
+<a href="projects.html">Projects</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="team.html">Team</a>
+<a href="contact.html">Messages</a>
+<a href="login.html">Logout</a>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main">
+
+<h2>Dashboard Overview</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>12</h3>
+<p>Active Projects</p>
+
+</div>
+
+<div class="card">
+
+<h3>8</h3>
+<p>Clients</p>
+
+</div>
+
+<div class="card">
+
+<h3>5</h3>
+<p>Developers</p>
+
+</div>
+
+<div class="card">
+
+<h3>20</h3>
+<p>Completed Tasks</p>
+
+</div>
+
+</div>
+
+<h2>Recent Projects</h2>
+
+<table>
+
+<tr>
+<th>Project</th>
+<th>Client</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>E-Commerce Platform</td>
+<td>ABC Company</td>
+<td>In Progress</td>
+</tr>
+
+<tr>
+<td>Mobile Banking App</td>
+<td>XYZ Bank</td>
+<td>Completed</td>
+</tr>
+
+<tr>
+<td>Cloud Dashboard</td>
+<td>Tech Corp</td>
+<td>Pending</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 ZNT DATA | Dashboard</p>
+
+</footer>
+
+</body>
+
+</html>

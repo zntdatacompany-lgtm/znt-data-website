@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>ZNT DATA</title>
+
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="animations.css">
+
 <script src="script.js"></script>
 
 <style>
@@ -50,12 +54,15 @@ padding:120px 20px;
 font-size:40px;
 }
 
-.hero button{
+/* BUTTON */
+
+.btn{
 padding:12px 30px;
 background:orange;
 border:none;
 font-size:18px;
 cursor:pointer;
+border-radius:5px;
 }
 
 /* SERVICES */
@@ -161,7 +168,7 @@ opacity:1;
 
 <body>
 
-<!-- INTRO -->
+<!-- INTRO SCREEN -->
 
 <div id="intro">
 <h1>ZNT DATA</h1>
@@ -181,13 +188,13 @@ opacity:1;
 
 <!-- HERO -->
 
-<section class="hero">
+<section class="hero fade-in">
 
 <h1>Welcome to ZNT DATA</h1>
 
 <p>Future IT Service Company</p>
 
-<button onclick="scrollServices()">Start</button>
+<button class="btn bounce" onclick="scrollServices()">Start</button>
 
 </section>
 
@@ -199,22 +206,22 @@ opacity:1;
 
 <div class="service-container">
 
-<div class="service-box">
+<div class="service-box zoom-in">
 <h3>Website Development</h3>
 <p>Professional modern websites.</p>
 </div>
 
-<div class="service-box">
+<div class="service-box zoom-in">
 <h3>Mobile App Development</h3>
 <p>Android & iOS apps.</p>
 </div>
 
-<div class="service-box">
+<div class="service-box zoom-in">
 <h3>Cloud Support</h3>
 <p>Cloud infrastructure solutions.</p>
 </div>
 
-<div class="service-box">
+<div class="service-box zoom-in">
 <h3>Software Solutions</h3>
 <p>Custom business software.</p>
 </div>
@@ -230,10 +237,9 @@ opacity:1;
 <h2>Contact Us</h2>
 
 <input type="text" placeholder="Your Name"><br>
-
 <input type="email" placeholder="Email"><br>
 
-<button>Send</button>
+<button class="btn bounce">Send</button>
 
 </section>
 
@@ -247,7 +253,7 @@ opacity:1;
 
 <script>
 
-/* INTRO ANIMATION */
+/* INTRO SCREEN HIDE */
 
 setTimeout(function(){
 
@@ -255,7 +261,7 @@ document.getElementById("intro").style.display="none";
 
 },2500);
 
-/* SCROLL BUTTON */
+/* SCROLL FUNCTION */
 
 function scrollServices(){
 
@@ -264,6 +270,10 @@ document.getElementById("services").scrollIntoView();
 }
 
 </script>
+
+<!-- SLIDER SCRIPT -->
+
+<script src="slider.js"></script>
 
 </body>
 </html>

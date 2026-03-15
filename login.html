@@ -30,8 +30,13 @@ text-align:center;
 }
 
 h2{
-margin-bottom:20px;
+margin-bottom:10px;
 color:#0f2a44;
+}
+
+p{
+margin-bottom:20px;
+color:#555;
 }
 
 input{
@@ -61,6 +66,7 @@ background:#e68900;
 .error{
 color:red;
 font-size:14px;
+margin-top:10px;
 }
 
 </style>
@@ -72,6 +78,8 @@ font-size:14px;
 <div class="container">
 
 <h2>ZNT DATA Login</h2>
+
+<p>Login</p>
 
 <input type="email" id="email" placeholder="Enter Email">
 
@@ -87,10 +95,18 @@ font-size:14px;
 
 function login(){
 
-let email = document.getElementById("email").value;
-let password = document.getElementById("password").value;
+var email=document.getElementById("email").value;
+var password=document.getElementById("password").value;
+var error=document.getElementById("error");
 
-if(email === "admin@zntdata.com" && password === "1234"){
+if(email=="" || password==""){
+
+error.innerText="Please enter Email and Password";
+return;
+
+}
+
+if(email=="admin@zntdata.com" && password=="1234"){
 
 alert("Login Successful");
 
@@ -98,7 +114,7 @@ window.location.href="index.html";
 
 }else{
 
-document.getElementById("error").innerText = "Invalid Email or Password";
+error.innerText="Invalid Email or Password";
 
 }
 

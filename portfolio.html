@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZNT DATA Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#f4f6f9;
+}
+
+/* NAVBAR */
+
+nav{
+background:#0f2a44;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:16px;
+}
+
+/* HERO */
+
+.hero{
+background:#0f2a44;
+color:white;
+text-align:center;
+padding:60px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+padding:50px;
+text-align:center;
+}
+
+.portfolio-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+/* CARD */
+
+.portfolio-card{
+background:white;
+width:300px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+overflow:hidden;
+transition:0.3s;
+}
+
+.portfolio-card:hover{
+transform:translateY(-8px);
+}
+
+.portfolio-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.portfolio-card h3{
+margin:15px;
+color:#0f2a44;
+}
+
+.portfolio-card p{
+font-size:14px;
+color:#555;
+padding:0 15px 15px;
+}
+
+/* TAGS */
+
+.tags{
+padding:10px;
+}
+
+.tags span{
+background:#0f2a44;
+color:white;
+padding:5px 10px;
+margin:3px;
+font-size:12px;
+border-radius:4px;
+display:inline-block;
+}
+
+/* FOOTER */
+
+footer{
+background:#0f2a44;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="projects.html">Projects</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="team.html">Team</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Our Portfolio</h1>
+
+<p>Real projects delivered by ZNT DATA</p>
+
+</section>
+
+<!-- PORTFOLIO -->
+
+<section class="portfolio">
+
+<h2>Featured Work</h2>
+
+<div class="portfolio-grid">
+
+<div class="portfolio-card">
+
+<img src="https://via.placeholder.com/300x180">
+
+<h3>E-Commerce Platform</h3>
+
+<p>Complete online store with payment system and admin dashboard.</p>
+
+<div class="tags">
+
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<img src="https://via.placeholder.com/300x180">
+
+<h3>Mobile Banking App</h3>
+
+<p>Secure digital banking system with real-time transactions.</p>
+
+<div class="tags">
+
+<span>Android</span>
+<span>API</span>
+<span>Security</span>
+
+</div>
+
+</div>
+
+
+<div class="portfolio-card">
+
+<img src="https://via.placeholder.com/300x180">
+
+<h3>Cloud Dashboard</h3>
+
+<p>Enterprise cloud infrastructure monitoring dashboard.</p>
+
+<div class="tags">
+
+<span>Cloud</span>
+<span>DevOps</span>
+<span>Network</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 ZNT DATA | IT Services Company</p>
+
+</footer>
+
+</body>
+
+</html>

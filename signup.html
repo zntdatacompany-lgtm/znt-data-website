@@ -1,42 +1,133 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>ZNT DATA Signup</title>
 
 <style>
+
+*{
+box-sizing:border-box;
+font-family:Segoe UI, Arial;
+}
+
 body{
-font-family: Arial;
-text-align:center;
-margin-top:100px;
-background:#0f2a44;
+margin:0;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
 color:white;
 }
 
-input{
-padding:10px;
-margin:10px;
-width:200px;
+.container{
+background:#1e293b;
+padding:40px;
+border-radius:10px;
+width:420px;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+input,select,textarea{
+width:100%;
+padding:12px;
+margin:8px 0;
+border:none;
+border-radius:6px;
+background:#334155;
+color:white;
+}
+
+input::placeholder,
+textarea::placeholder{
+color:#94a3b8;
+}
+
+textarea{
+resize:none;
+height:70px;
 }
 
 button{
-padding:10px 20px;
-background:orange;
+width:100%;
+padding:12px;
+margin-top:15px;
+background:#f59e0b;
 border:none;
+border-radius:6px;
+font-size:16px;
 cursor:pointer;
 }
+
+button:hover{
+background:#fbbf24;
+}
+
+.login{
+text-align:center;
+margin-top:15px;
+font-size:14px;
+}
+
+.login a{
+color:#38bdf8;
+text-decoration:none;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<h2>Signup - ZNT DATA</h2>
+<div class="container">
 
-<input type="text" placeholder="Full Name"><br>
-<input type="email" placeholder="Email"><br>
-<input type="password" placeholder="Password"><br>
+<h2>Create ZNT DATA Account</h2>
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email Address">
+
+<input type="password" placeholder="Password">
+
+<input type="tel" placeholder="Phone Number">
+
+<select>
+<option>Select Role</option>
+<option>Client</option>
+<option>Problem Solver</option>
+</select>
+
+<input type="text" placeholder="Country">
+
+<input type="text" placeholder="City">
+
+<input type="text" placeholder="Primary Skills (Python, Web Dev, AI)">
+
+<input type="number" placeholder="Years of Experience">
+
+<input type="text" placeholder="GitHub Profile">
+
+<input type="text" placeholder="LinkedIn Profile">
+
+<textarea placeholder="Describe your technical experience"></textarea>
+
+<textarea placeholder="What type of problems can you solve?"></textarea>
 
 <button>Create Account</button>
 
+<div class="login">
+Already have an account? <a href="login.html">Login</a>
+</div>
+
+</div>
+
 </body>
+
 </html>

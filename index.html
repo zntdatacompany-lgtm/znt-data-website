@@ -8,11 +8,6 @@
 
 <title>ZNT DATA</title>
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="animations.css">
-
-<script src="script.js"></script>
-
 <style>
 
 html{
@@ -34,14 +29,6 @@ position:sticky;
 top:0;
 }
 
-/* LOGO */
-
-.logo{
-height:45px;
-vertical-align:middle;
-margin-right:20px;
-}
-
 nav a{
 color:white;
 margin:15px;
@@ -56,13 +43,6 @@ background:linear-gradient(#0f2a44,#1e4d7b);
 color:white;
 text-align:center;
 padding:120px 20px;
-}
-
-.hero img{
-width:100%;
-max-height:450px;
-object-fit:cover;
-margin-bottom:20px;
 }
 
 .hero h1{
@@ -196,40 +176,40 @@ opacity:1;
 
 <nav>
 
-<img src="images/logo.png" class="logo">
-
 <a href="#">Home</a>
 <a href="#services">Services</a>
 <a href="#contact">Contact</a>
-<a href="login.html">Login</a>
-<a href="signup.html">Signup</a>
-<a href="clients.html">Clients</a>
-<a href="testimonials.html">Testimonials</a>
-<a href="pricing.html">Pricing</a>
-<a href="faq.html">FAQ</a>
-<a href="news.html">News</a>
-<a href="blog.html">Blog</a>
+<a href="#">Login</a>
+<a href="#">Signup</a>
+<a href="#">Clients</a>
+<a href="#">Testimonials</a>
+<a href="#">Pricing</a>
+<a href="#">FAQ</a>
+<a href="#">News</a>
+<a href="#">Blog</a>
 
 </nav>
 
-<section class="hero fade-in">
-
-<img src="images/banner1.jpg">
+<section class="hero">
 
 <h1>Welcome to ZNT DATA</h1>
 
 <p>Future IT Service Company</p>
 
-<button class="btn bounce" onclick="scrollServices()">Start</button>
+<button class="btn" onclick="scrollServices()">Start</button>
 
 </section>
 
 <section class="banner">
-<img src="images/banner2.jpg">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
 </section>
 
 <section class="banner">
-<img src="images/banner3.jpg">
+<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31">
+</section>
+
+<section class="banner">
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
 </section>
 
 <section class="services" id="services">
@@ -238,22 +218,22 @@ opacity:1;
 
 <div class="service-container">
 
-<div class="service-box zoom-in">
+<div class="service-box">
 <h3>Website Development</h3>
 <p>Professional modern websites.</p>
 </div>
 
-<div class="service-box zoom-in">
+<div class="service-box">
 <h3>Mobile App Development</h3>
 <p>Android & iOS apps.</p>
 </div>
 
-<div class="service-box zoom-in">
+<div class="service-box">
 <h3>Cloud Support</h3>
 <p>Cloud infrastructure solutions.</p>
 </div>
 
-<div class="service-box zoom-in">
+<div class="service-box">
 <h3>Software Solutions</h3>
 <p>Custom business software.</p>
 </div>
@@ -263,15 +243,15 @@ opacity:1;
 </section>
 
 <section class="banner">
-<img src="images/banner4.jpg">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
 </section>
 
 <section class="banner">
-<img src="images/banner5.jpg">
+<img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f">
 </section>
 
 <section class="banner">
-<img src="images/banner6.jpg">
+<img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87">
 </section>
 
 <section class="contact" id="contact">
@@ -281,7 +261,7 @@ opacity:1;
 <input type="text" placeholder="Your Name"><br>
 <input type="email" placeholder="Email"><br>
 
-<button class="btn bounce">Send</button>
+<button class="btn">Send</button>
 
 </section>
 
@@ -302,8 +282,6 @@ document.getElementById("services").scrollIntoView();
 }
 
 </script>
-
-<script src="slider.js"></script>
 
 </body>
 </html>

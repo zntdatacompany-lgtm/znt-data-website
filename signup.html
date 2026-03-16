@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -11,74 +10,78 @@
 <style>
 
 *{
+margin:0;
+padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Segoe UI, sans-serif;
 }
 
 body{
-margin:0;
 height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-background:#0f2a44;
+background:linear-gradient(135deg,#0f172a,#1d4ed8);
 color:white;
 }
 
-/* Signup Card */
+/* Card */
 
 .card{
-background:rgba(255,255,255,0.05);
+width:380px;
 padding:40px;
-border-radius:10px;
-width:350px;
-box-shadow:0 0 20px rgba(0,0,0,0.5);
+border-radius:12px;
+background:rgba(255,255,255,0.08);
 backdrop-filter:blur(10px);
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+text-align:center;
 }
 
-h2{
-text-align:center;
+.card h2{
 margin-bottom:25px;
+font-size:26px;
 }
 
 /* Inputs */
 
 input{
 width:100%;
-padding:12px;
+padding:13px;
 margin:10px 0;
 border:none;
 border-radius:6px;
-background:rgba(255,255,255,0.1);
+background:#1f2937;
 color:white;
+font-size:14px;
 }
 
 input::placeholder{
-color:#cbd5e1;
+color:#9ca3af;
 }
 
 /* Button */
 
 button{
 width:100%;
-padding:12px;
+padding:13px;
 margin-top:15px;
 border:none;
 border-radius:6px;
-background:orange;
-color:black;
+background:linear-gradient(90deg,#facc15,#f59e0b);
 font-size:16px;
+font-weight:bold;
 cursor:pointer;
+color:black;
+transition:0.3s;
 }
 
 button:hover{
-background:#ffb347;
+transform:scale(1.03);
 }
 
 /* Login link */
 
 .login{
-text-align:center;
 margin-top:15px;
 font-size:14px;
 }
@@ -117,5 +120,4 @@ Already have an account? <a href="login.html">Login</a>
 </div>
 
 </body>
-
 </html>

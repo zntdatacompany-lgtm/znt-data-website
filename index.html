@@ -34,6 +34,14 @@ position:sticky;
 top:0;
 }
 
+/* LOGO */
+
+.logo{
+height:45px;
+vertical-align:middle;
+margin-right:20px;
+}
+
 nav a{
 color:white;
 margin:15px;
@@ -48,6 +56,13 @@ background:linear-gradient(#0f2a44,#1e4d7b);
 color:white;
 text-align:center;
 padding:120px 20px;
+}
+
+.hero img{
+width:100%;
+max-height:450px;
+object-fit:cover;
+margin-bottom:20px;
 }
 
 .hero h1{
@@ -93,6 +108,13 @@ transition:0.3s;
 transform:translateY(-8px);
 }
 
+/* IMAGE BANNERS */
+
+.banner img{
+width:100%;
+display:block;
+}
+
 /* CONTACT */
 
 .contact{
@@ -126,7 +148,7 @@ text-align:center;
 padding:20px;
 }
 
-/* INTRO ANIMATION */
+/* INTRO */
 
 #intro{
 position:fixed;
@@ -168,27 +190,31 @@ opacity:1;
 
 <body>
 
-<!-- INTRO SCREEN -->
-
 <div id="intro">
 <h1>ZNT DATA</h1>
 </div>
 
-<!-- NAVBAR -->
-
 <nav>
+
+<img src="images/logo.png" class="logo">
 
 <a href="#">Home</a>
 <a href="#services">Services</a>
 <a href="#contact">Contact</a>
 <a href="login.html">Login</a>
 <a href="signup.html">Signup</a>
+<a href="clients.html">Clients</a>
+<a href="testimonials.html">Testimonials</a>
+<a href="pricing.html">Pricing</a>
+<a href="faq.html">FAQ</a>
+<a href="news.html">News</a>
+<a href="blog.html">Blog</a>
 
 </nav>
 
-<!-- HERO -->
-
 <section class="hero fade-in">
+
+<img src="images/banner1.jpg">
 
 <h1>Welcome to ZNT DATA</h1>
 
@@ -198,7 +224,13 @@ opacity:1;
 
 </section>
 
-<!-- SERVICES -->
+<section class="banner">
+<img src="images/banner2.jpg">
+</section>
+
+<section class="banner">
+<img src="images/banner3.jpg">
+</section>
 
 <section class="services" id="services">
 
@@ -230,7 +262,17 @@ opacity:1;
 
 </section>
 
-<!-- CONTACT -->
+<section class="banner">
+<img src="images/banner4.jpg">
+</section>
+
+<section class="banner">
+<img src="images/banner5.jpg">
+</section>
+
+<section class="banner">
+<img src="images/banner6.jpg">
+</section>
 
 <section class="contact" id="contact">
 
@@ -243,8 +285,6 @@ opacity:1;
 
 </section>
 
-<!-- FOOTER -->
-
 <footer>
 
 <p>© 2026 ZNT DATA | IT Services Company</p>
@@ -253,25 +293,15 @@ opacity:1;
 
 <script>
 
-/* INTRO SCREEN HIDE */
-
 setTimeout(function(){
-
 document.getElementById("intro").style.display="none";
-
 },2500);
 
-/* SCROLL FUNCTION */
-
 function scrollServices(){
-
 document.getElementById("services").scrollIntoView();
-
 }
 
 </script>
-
-<!-- SLIDER SCRIPT -->
 
 <script src="slider.js"></script>
 

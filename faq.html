@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZNT DATA FAQ</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6f9;
+}
+
+/* NAVBAR */
+
+nav{
+background:#0f2a44;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+}
+
+/* HEADER */
+
+.header{
+text-align:center;
+padding:60px 20px;
+background:linear-gradient(#0f2a44,#1e4d7b);
+color:white;
+}
+
+.header h1{
+font-size:40px;
+}
+
+/* FAQ SECTION */
+
+.faq{
+max-width:800px;
+margin:auto;
+padding:40px;
+}
+
+.faq-item{
+background:white;
+margin:15px 0;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.faq-question{
+padding:20px;
+cursor:pointer;
+font-weight:bold;
+color:#0f2a44;
+}
+
+.faq-answer{
+padding:0 20px 20px 20px;
+display:none;
+color:#555;
+}
+
+/* FOOTER */
+
+footer{
+background:#0f2a44;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="projects.html">Projects</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="clients.html">Clients</a>
+<a href="testimonials.html">Testimonials</a>
+<a href="pricing.html">Pricing</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+<a href="blog.html">Blog</a>
+
+</nav>
+
+<!-- HEADER -->
+
+<div class="header">
+
+<h1>Frequently Asked Questions</h1>
+
+<p>Common questions about ZNT DATA services</p>
+
+</div>
+
+<!-- FAQ SECTION -->
+
+<section class="faq">
+
+<div class="faq-item">
+
+<div class="faq-question" onclick="toggleFAQ(this)">
+What services does ZNT DATA provide?
+</div>
+
+<div class="faq-answer">
+We provide website development, mobile app development, cloud solutions, and software engineering services.
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<div class="faq-question" onclick="toggleFAQ(this)">
+How long does a project take?
+</div>
+
+<div class="faq-answer">
+Project duration depends on complexity. Small projects take 2-4 weeks while enterprise projects may take several months.
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<div class="faq-question" onclick="toggleFAQ(this)">
+Do you offer support after project completion?
+</div>
+
+<div class="faq-answer">
+Yes, ZNT DATA provides ongoing maintenance and technical support after project delivery.
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<div class="faq-question" onclick="toggleFAQ(this)">
+How can I contact ZNT DATA?
+</div>
+
+<div class="faq-answer">
+You can contact us through the Contact page or email our support team.
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 ZNT DATA | IT Services Company</p>
+
+</footer>
+
+<script>
+
+function toggleFAQ(element){
+
+var answer = element.nextElementSibling;
+
+if(answer.style.display==="block"){
+answer.style.display="none";
+}else{
+answer.style.display="block";
+}
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -24,6 +24,14 @@ top:0;
 z-index:1000;
 }
 
+/* LOGO */
+
+nav img{
+height:45px;
+vertical-align:middle;
+margin-right:20px;
+}
+
 nav a{
 color:white;
 margin:15px;
@@ -52,6 +60,22 @@ margin-bottom:10px;
 
 .hero p{
 font-size:18px;
+}
+
+/* HERO IMAGE */
+
+.hero-img{
+width:100%;
+max-height:500px;
+object-fit:cover;
+margin-bottom:20px;
+}
+
+/* BANNER IMAGES */
+
+.banner img{
+width:100%;
+display:block;
 }
 
 /* SECTION */

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZNT DATA Profile</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6f9;
+display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:220px;
+background:#0f2a44;
+height:100vh;
+padding-top:30px;
+position:fixed;
+}
+
+.sidebar h2{
+color:white;
+text-align:center;
+margin-bottom:40px;
+}
+
+.sidebar a{
+display:block;
+color:white;
+padding:15px;
+text-decoration:none;
+font-size:16px;
+}
+
+.sidebar a:hover{
+background:#1e4d7b;
+}
+
+/* MAIN CONTENT */
+
+.main{
+margin-left:220px;
+padding:40px;
+width:100%;
+}
+
+/* PROFILE CARD */
+
+.profile-card{
+background:white;
+padding:40px;
+border-radius:10px;
+max-width:600px;
+margin:auto;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.profile-img{
+width:120px;
+height:120px;
+border-radius:50%;
+margin-bottom:20px;
+}
+
+h3{
+margin:10px 0;
+color:#0f2a44;
+}
+
+.info{
+margin:10px 0;
+color:#555;
+}
+
+button{
+margin-top:20px;
+padding:12px 25px;
+background:#ff9800;
+border:none;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#e68900;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h2>ZNT DATA</h2>
+
+<a href="dashboard.html">Dashboard</a>
+<a href="profile.html">Profile</a>
+<a href="projects.html">Projects</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="contact.html">Messages</a>
+<a href="index.html">Logout</a>
+<a href="testimonials.html">Testimonials</a>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main">
+
+<div class="profile-card">
+
+<img src="https://i.pravatar.cc/150" class="profile-img">
+
+<h3 id="name">John Developer</h3>
+
+<p class="info">Email: john@zntdata.com</p>
+
+<p class="info">Role: Web Developer</p>
+
+<p class="info">Company: ZNT DATA</p>
+
+<button onclick="editProfile()">Edit Profile</button>
+
+</div>
+
+</div>
+
+<script>
+
+function editProfile(){
+
+let name = prompt("Enter your name");
+
+if(name){
+
+document.getElementById("name").innerText = name;
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -9,86 +10,69 @@
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Segoe UI, sans-serif;
-}
-
 body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(135deg,#0f2a44,#1e4d7b);
 height:100vh;
 display:flex;
-justify-content:center;
 align-items:center;
-background:linear-gradient(135deg,#0f172a,#1d4ed8);
-color:white;
+justify-content:center;
 }
 
-/* Card */
-
-.card{
-width:380px;
+.container{
+background:white;
 padding:40px;
-border-radius:12px;
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(10px);
-box-shadow:0 10px 30px rgba(0,0,0,0.5);
+border-radius:10px;
+width:350px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
 text-align:center;
 }
 
-.card h2{
-margin-bottom:25px;
-font-size:26px;
+h2{
+margin-bottom:10px;
+color:#0f2a44;
 }
 
-/* Inputs */
+p{
+margin-bottom:20px;
+color:#666;
+}
 
 input{
 width:100%;
-padding:13px;
+padding:12px;
 margin:10px 0;
-border:none;
-border-radius:6px;
-background:#1f2937;
-color:white;
+border-radius:5px;
+border:1px solid #ccc;
 font-size:14px;
 }
-
-input::placeholder{
-color:#9ca3af;
-}
-
-/* Button */
 
 button{
 width:100%;
-padding:13px;
-margin-top:15px;
+padding:12px;
+background:#ff9800;
 border:none;
-border-radius:6px;
-background:linear-gradient(90deg,#facc15,#f59e0b);
+color:white;
 font-size:16px;
-font-weight:bold;
+border-radius:5px;
 cursor:pointer;
-color:black;
-transition:0.3s;
 }
 
 button:hover{
-transform:scale(1.03);
+background:#e68900;
 }
 
-/* Login link */
-
-.login{
-margin-top:15px;
+.error{
+color:red;
 font-size:14px;
+margin-top:10px;
 }
 
-.login a{
-color:#60a5fa;
-text-decoration:none;
+.success{
+color:green;
+font-size:14px;
+margin-top:10px;
 }
 
 </style>
@@ -97,27 +81,67 @@ text-decoration:none;
 
 <body>
 
-<div class="card">
+<div class="container">
 
-<h2>Create ZNT DATA Account</h2>
+<h2>ZNT DATA Signup</h2>
 
-<input type="text" placeholder="Full Name">
+<p>Create your account</p>
 
-<input type="email" placeholder="Email Address">
+<input type="text" id="name" placeholder="Full Name">
 
-<input type="password" placeholder="Password">
+<input type="email" id="email" placeholder="Email">
 
-<input type="text" placeholder="Country">
+<input type="password" id="password" placeholder="Password">
 
-<input type="text" placeholder="City">
+<input type="password" id="confirmPassword" placeholder="Confirm Password">
 
-<button>Create Account</button>
+<button onclick="signup()">Create Account</button>
 
-<div class="login">
-Already have an account? <a href="login.html">Login</a>
+<p class="error" id="error"></p>
+<p class="success" id="success"></p>
+
 </div>
 
-</div>
+<script>
+
+function signup(){
+
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var password=document.getElementById("password").value;
+var confirm=document.getElementById("confirmPassword").value;
+
+var error=document.getElementById("error");
+var success=document.getElementById("success");
+
+error.innerText="";
+success.innerText="";
+
+if(name=="" || email=="" || password=="" || confirm==""){
+
+error.innerText="Please fill all fields";
+return;
+
+}
+
+if(password!=confirm){
+
+error.innerText="Passwords do not match";
+return;
+
+}
+
+success.innerText="Account created successfully";
+
+setTimeout(function(){
+
+window.location.href="login.html";
+
+},1500);
+
+}
+
+</script>
 
 </body>
 </html>
